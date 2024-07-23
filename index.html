@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="images/Microsoft-Word-Logo.png" type="image/x-icon">
+    <title>Ms-Word</title>
+</head>
+
+<body>
+    <h1>Ms-word Clone</h1>
+    <div>
+        <select class="dropStyling" id="fontSelect">
+            <option selected disabled>Font Family</option>
+            <option value="sans-serif">sans-serif</option>
+            <option value="monospace">monospace</option>
+            <option value="cursive">cursive</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="fantasy">fantasy</option>
+        </select>
+      
+            <select class="dropStyling" id="fontSize">
+                <option disabled selected>f-size</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="72">72..</option>
+            </select>
+    
+            <select class="dropStyling" id="textCaseChange">
+                <option disabled selected>font-Case</option>
+                <option value="uppercase">uppercase</option>
+                <option value="lowercase">lowercase</option>
+                <option value="capitalize">capitalize</option>
+            </select>
+    </div>
+
+    <div class="header">
+        <button class="btn-hover" id="bold">B</button>
+        <button class="btn-hover" id="italic">/</button>
+        <button class="btn-hover" id="underline">U</button>
+
+    </div>
+
+
+
+
+
+    <div class="textalign">
+        <div id="textes" contenteditable="true"></div>
+    </div>
+
+
+</body>
+<script src="JS/app.js"></script>
+
+</html>
