@@ -7,22 +7,34 @@ let underline = document.getElementById("underline")
 
 let button = document.getElementById('bold')
 
+let lineThrough = document.getElementById("line-through")
+
+
 button.addEventListener('click',function(){
-
-document.execCommand('bold', false, null)
-
+    
+    document.execCommand('bold', false, null)
+    
 })
 
 italic2.addEventListener('click',function(){
-
-document.execCommand('italic', false, null)
-
+    
+    document.execCommand('italic', false, null)
+    
 })
 
 underline.addEventListener('click',function(){
- 
+    
     document.execCommand('underline', false, null)
 })
+
+lineThrough.addEventListener("click",function(){
+     if(textes.style.textDecoration === 'line-through'){
+             textes.style.textDecoration='none';
+         }else{
+     textes.style.textDecoration='line-through';
+ }
+})
+
 
 let text = document.querySelector("#fontSelect");
 
@@ -35,10 +47,10 @@ text.addEventListener("change", function(){
         
     }else if(text.value == "cursive"){
         textes.style.fontFamily = "cursive"
-
+        
     }else if(text.value == "Times New Roman"){
         textes.style.fontFamily = "Times New Roman"
-
+        
     }else if(text.value == "Courier New"){
         textes.style.fontFamily = "Courier New"
 
@@ -113,3 +125,28 @@ textCaseChange.addEventListener("click", function(){
     }
 })
 
+let left = document.querySelector("#left")
+
+left.addEventListener("click",function(){
+   textes.style.textAlign = "left"
+})
+
+let center = document.querySelector("#center");
+
+center.addEventListener("click",function(){
+    textes.style.textAlign = "center"
+})
+
+let right = document.querySelector("#right");
+
+right.addEventListener("click",function(){
+    textes.style.textAlign = "right"
+})
+
+
+let colorInput = document.querySelector("#colorInput")
+colorInput.addEventListener("input",function(){
+    let colorOne = colorInput.value;
+
+    textes.style.color = colorOne;
+})

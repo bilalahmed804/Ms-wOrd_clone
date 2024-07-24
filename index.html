@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="images/Microsoft-Word-Logo.png" type="image/x-icon">
-    <title>Ms-Word</title>
+    <title>MS-WORD</title>
 </head>
 
 <body>
     <h1>Ms-word Clone</h1>
-    <div>
+    <div class="head">
         <select class="dropStyling" id="fontSelect">
             <option selected disabled>Font Family</option>
             <option value="sans-serif">sans-serif</option>
@@ -47,19 +47,23 @@
                 <option value="lowercase">lowercase</option>
                 <option value="capitalize">capitalize</option>
             </select>
+            <div class="button-position">
+
+                <button class="dropStyling" id="left">Left</button>
+                <button class="dropStyling" id="center">Center</button>
+                <button class="dropStyling" id="right">Right</button>
+            </div>
     </div>
 
     <div class="header">
         <button class="btn-hover" id="bold">B</button>
         <button class="btn-hover" id="italic">/</button>
         <button class="btn-hover" id="underline">U</button>
+        <button class="btn-hover" id="line-through">abc</button>
+
+        <input type="color" id="colorInput">
 
     </div>
-
-
-
-
-
     <div class="textalign">
         <div id="textes" contenteditable="true"></div>
     </div>
